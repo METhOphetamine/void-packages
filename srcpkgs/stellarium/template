@@ -5,7 +5,7 @@ revision=2
 build_style=cmake
 configure_args="-DENABLE_SHOWMYSKY=Off -DUSE_PLUGIN_TELESCOPECONTROL=NO -DBUILD_MD2HTML_EXECUTABLE=OFF -DQT_VERSION_MAJOR=6"
 hostmakedepends="perl gettext"
-makedepends="qt6-base-private-devel qt6-multimedia-devel qt6-location-devel qt6-serialport-devel qt6-tools-devel qt6-webengine-devel qt6-charts-devel QXlsx exiv2-devel nlopt-devel libmd4c-devel"
+makedepends="qt6-base-private-devel qt6-multimedia-devel qt6-location-devel qt6-serialport-devel qt6-tools-devel qt6-webengine-devel qt6-charts-devel QXlsx-devel exiv2-devel nlopt-devel libmd4c-devel"
 depends="desktop-file-utils"
 short_desc="Open Source Planetarium"
 maintainer="Andrew Benson <abenson+void@gmail.com>"

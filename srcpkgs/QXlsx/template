@@ -13,3 +13,13 @@ license="MIT"
 homepage="https://qtexcel.github.io/QXlsx"
 distfiles="https://github.com/QtExcel/QXlsx/archive/v${version}.tar.gz"
 checksum=4461bb0fc9b88b6a970520e8b32eb7d2fc391a1a5c326b139a0af836278cdb09
+
+QXlsx-devel_package() {
+	depends="${sourcepkg}>=${version}_${revision}"
+	short_desc+=" - development files"
+	pkg_install() {
+		vmove usr/lib/cmake
+		vmove usr/include
+		vmove "usr/lib/*.so"
+	}
+}
